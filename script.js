@@ -30,15 +30,13 @@ function showMessage(response) {
         const videoElement = document.createElement("video");
         videoElement.src = "./Maroon 5 - Sugar.mp4#t=42";
         videoElement.autoplay = true;
-        videoElement.controls = false; // Optional: if you want to show video controls
+        videoElement.controls = false;
         document.body.appendChild(videoElement);
         videoElement.style.position = "fixed";
         videoElement.style.top = "40%";
         videoElement.style.left = "50%";
         videoElement.style.transform = "translate(-50%, -50%)";
         videoElement.style.width = "700px"
-        // videoElement.style.zIndex = 1000; // Ensure it's above other elements
-
         document.body.appendChild(videoElement);
         // Set the flag to true after playing the video
         videoPlayed = true;
@@ -53,8 +51,6 @@ function showMessage(response) {
       noButton.style.left = randomX + "px";
       noButton.style.top = randomY + "px";
     });
-
-    // Optional: You can also add a timeout to reset the position after a few seconds
   }
 
   if (response === "Yes") {
